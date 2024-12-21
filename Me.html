@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="decorate.css">
+    <script>
+        function showSection(section) {
+           
+            var sections = document.querySelectorAll('.section-content');
+            sections.forEach(function(sec) {
+                sec.style.display = 'none';
+            });
+
+        
+            var selectedSection = document.getElementById(section);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>! Welcome To My Website !</h1>
+            <div class="profile-picture">
+                <img src="profile.jpg" alt="Profile Picture" />
+            </div>
+            <h2>ชื่อ: ภคมณ สารชัย<br> Name: Phakamon Sarachai <br> Nickname: สตังค์ (Satang)</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="showSection('about')">Personal Information</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('skills')">My Abilities</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section-content about">
+        <div class="container">
+            <h2>Personal Information</h2>
+            <p>วันเกิด : 17 พฤศจิกายน 2551 <br> อายุ : 16 <br>โรงเรียน : สาธิต มศว ประสานมิตร<br>สายการเรียน : วิศวะคอมพิวเตอร์ </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section-content skills">
+        <div class="container">
+            <h2>My Abilities</h2>
+            <ul>
+                <li>เขียนโค้ดเบื้องต้น HTML & CSS & JavaScript & Python</li>
+                <li>วาดรูป ระบายสี</li>
+                <li>เล่นเกม พูดคุย นอน</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section-content contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Gmail: phakamon.sa@gmail.com</li>
+                <li>Tel: 064-672-6451</li>
+                <li>Instagram: pikamon_tang</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
+
+    

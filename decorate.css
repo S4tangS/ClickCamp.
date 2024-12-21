@@ -1,0 +1,114 @@
+/* ตั้งค่าทั่วไป */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* พื้นหลังสีดำ */
+    color: #fff; /* ข้อความเป็นสีขาว */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* ทำให้ข้อความอยู่ตรงกลาง */
+}
+
+/* กำหนดการจัดการรูปภาพ */
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6347; /* เพิ่มกรอบรอบรูป */
+}
+
+/* ตั้งค่าหัวข้อ */
+h1, h2 {
+    text-align: center;
+    color: #fff; /* หัวข้อเป็นสีขาว */
+    margin-bottom: 20px; /* เพิ่มระยะห่าง */
+}
+
+/* เมนูการนำทาง */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6347; /* ลิงก์สีแดง */
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 2px solid transparent; /* เพิ่มกรอบโปร่งใส */
+}
+
+nav ul li a:hover {
+    background-color: #ff6347; 
+    color: #fff; 
+    border-color: #fff; /* เพิ่มกรอบสีขาวเมื่อ hover */
+}
+
+/* ซ่อนเนื้อหาทั้งหมดเริ่มต้น */
+.section-content {
+    display: none;
+    border: 2px solid #ff6347; /* เพิ่มกรอบให้ส่วนต่างๆ */
+    border-radius: 10px; /* ทำให้มุมกรอบโค้ง */
+    background-color: #333; /* พื้นหลังส่วนข้อมูลเป็นสีเทาเข้ม */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* เมื่อโหลดหน้า ให้แสดงส่วนที่เกี่ยวข้อง */
+#about {
+    display: block;
+}
+
+.section-content h2 {
+    text-align: center;
+    color: #ff6347; /* หัวข้อของแต่ละส่วนเป็นสีแดง */
+    margin-bottom: 10px;
+}
+
+/* ปรับปรุงลิสต์ให้ดูสวยงาม */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+    color: #fff; /* ข้อความในลิสต์เป็นสีขาว */
+    font-size: 1.1em; /* ขยายขนาดตัวอักษร */
+    border-bottom: 1px solid #ff6347; /* เพิ่มเส้นขีดใต้ */
+    padding-bottom: 5px; /* เพิ่มระยะห่างระหว่างข้อความและเส้นขีดใต้ */
+}
+
+/* เพิ่มกรอบให้ข้อความ */
+p {
+    border: 2px solid #ff6347;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    background-color: #444; /* พื้นหลังเทาเข้ม */
+}
+
+/* ปรับปรุงเมนูการนำทางให้สวยงาม */
+nav ul li a {
+    background-color: rgba(255, 99, 71, 0.2); /* ทำให้มีความโปร่งแสง */
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 8px;
+}
+
